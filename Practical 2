@@ -1,0 +1,147 @@
+print("\nMerge Sort")
+
+A=[] 
+B-[]
+
+n=int (input ("Enter the number of elements in A: "))
+
+for i in range(n):
+
+elt-int (input ("Enter the element: "))
+
+A.append(elt)
+
+B.append(0)
+
+print("A-",A) n-len (A)
+
+lower-0
+
+upper-n-1
+mid=int((lower+upper)/2)
+
+def mergesorting (lower, upper): 
+if upper>lower:
+ mid=int((lower+upper)/2) 
+mergesorting (lower, mid)
+ mergesorting (mid+1, upper) 
+mergelists (lower, mid, upper)
+def mergelists (lower, mid, upper): print("Lower=", lower, "Upper=", upper) lbl-lower
+ ubl-mid
+ 1b2=mid+1
+ ub2=upper 
+k=lower
+
+global A
+ global B
+
+while lbl<=ubl and 1b2<=ub2: 
+if A[lbl]<A[1b2]: 
+B[k]=A[1b1] 
+1b1=1b1+1
+ k=k+1
+ else:
+ B[k]=A[1b2]
+ 1b2=1b2+1
+ k=k+1
+
+if lbl>ubl: 
+while lb2<=ub2: 
+B[k]=A[1b2]
+ 1b2=1b2+1
+ k=k+1
+
+else: 
+while lbl<=ubl: 
+B[k]=A[1b1]
+ lbl-lbl+1
+ k=k+1
+
+for k in range (lower, upper+1):
+ A[k]=B [k]
+
+print (A)
+
+mergesorting (0,n-1)
+
+
+
+
+
+
+
+
+print("\nLinear Search")
+
+A=173,18,10,5,21,32,741
+
+print("A-",A)
+
+data=int(input("Enter the element to be searched"))
+
+n=len (A)
+
+ flag=0
+
+for i in range(n):
+
+ If A[1]=dala:
+
+flag=1 
+break 
+  if flag==0:
+
+print ("The element is not present in the array.")
+else:
+
+print("The element is present in the array at ",i)
+
+
+
+
+
+
+
+
+
+
+
+print("\nBinary Search").
+
+A=110,20,25,51,75,100,250,500] print("A-", Α)
+
+data=int (Input ("Enter the element to be searched: "))
+
+n=len (A)
+
+start=0
+ end=n-1
+
+flag=0
+
+print ("Start\tEnd\LMid")
+
+while start<-end:
+
+mid=int((start+end)/2)
+
+print (start, "\t", end, "\t", mid)
+
+if data==A[mid]:
+
+flaq=1
+
+break
+
+elif data<A[mid]:
+end=mid-1
+
+else:
+
+start=mid+1
+
+If flag== 0:
+
+print ("The element in not present in the array.")
+
+else: print ("The element is present in the array at position ",mid)
